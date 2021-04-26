@@ -1,0 +1,561 @@
+@import 'fonts';
+@import 'vars';
+@import 'media-queries';
+
+$gray: #515f67;
+$lightblue:#4bcaff;
+$darkgray:#353f47;
+.mob-menu{
+    color: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    @include respond-to($phone){
+        color: #fff;
+        font-size: 1.5em;
+    }  
+}
+.mob-close{
+    color: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    @include respond-to($phone){
+        color: #fff;
+        font-size: 1.6em;
+        float: right;
+        margin: -.9em 0.8em 0em 0;
+    } 
+}
+
+//Lineas
+.line{
+    width: 60px;
+    height: 2px;
+    padding: 0;
+    margin: 0.3em 0 3em;
+    background:$darkgray;
+    display: block;
+    @include respond-to($phone){
+        margin: 0.3em 0 1em 0;
+        width: 35px;
+    }
+}
+.line2{
+    width: 60px;
+    height: 2px;
+    padding: 0;
+    margin: 0.3em 0 2em;
+    background:#fff;
+    display: block;
+    @include respond-to($phone){
+        width: 35px;
+        margin: 0.3em 0 1em;
+    }
+}
+//Top
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    opacity: 85%;
+}
+.top-bar{
+    margin: 0em 0em;
+    padding: 1.3em 10em;
+    width: 100%;
+    background: $darkgray;
+    @include respond-to($phone){
+        padding: .5em 3em;
+    }
+}
+.logo{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'notobold';
+    @include respond-to($phone){
+        font-size: 25px;
+        margin: -0.25em 2.9em 0em 0;
+        float: right;
+    }
+}
+.e{
+    color: $lightblue;
+}
+.top-nav{
+    @include respond-to($phone){
+        position: fixed;
+        top: -1em;
+        left: -25em;
+        width: 70%;
+        height: 100%;
+        padding: 3em 0 0;
+        background: #262D40;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    padding: 0;
+    float: right;
+}
+.top-nav-item{
+    margin: 1em;
+    display: inline-block;
+    @include respond-to($phone){
+        display: block;
+    }
+}
+.top-nav-link{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'notobold';
+    @include respond-to($phone){
+        font-size: 18px;
+    }
+}
+.top-nav-link:hover{
+    color: $lightblue;
+    padding: .3em 1em;
+    border: .2em solid $lightblue;
+    @include respond-to($phone){
+        border: none;
+    }
+}
+.col-sm-3{
+    padding: 0em;
+}
+//Pictire section
+.fondo{
+    text-align: center;
+    background: url(../imgs/header.jpg);
+    padding: 14em;
+    @include respond-to($phone){
+        padding: 5em 3em;
+    }
+}
+h1,h2{
+    font-size: 42px;
+    font-family: 'notolight';
+    color: #fff;
+    display: inline-block;
+    background: $gray;
+    @include respond-to($phone){
+        font-size: 20px;
+    }
+}
+.title{
+    color: #fff;
+    font-size: 24px;
+    margin: .5em 0 0 0;
+    font-family: 'notoregular';
+    @include respond-to($phone){
+        font-size: 20px;
+    }
+}
+.col-service{
+    margin: 0em;
+    padding: 0em;
+}
+//Services section
+.service{
+    background: #4bcaff;
+    padding: 3em 10em;
+    margin: 0em;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.title-service{
+    color: #fff;
+    font-size: 30px;
+    padding: 0em;
+    margin: 0em;
+    font-family: 'notolight';
+    @include respond-to($phone){
+        font-size: 25px;
+    }
+}
+.description{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'notoregular';
+    text-align: justify;
+    padding: 0 1em 0 0;
+    @include respond-to($phone){
+        padding: 0 0 1em 0;
+    }
+}
+
+.portafolio{
+    background: #fff;
+    padding: 2em 10em;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+//Portfolio section
+.port-logo{
+    color: $darkgray;
+    display: inline-block;
+    background: none;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0em;
+    margin: 0em;
+    font-family: 'notolight';
+    @include respond-to($phone){
+        font-size: 25px;
+    }
+}
+.port-bar{
+    margin: 0em;
+    padding: 2em 0em;
+    width: 100%;
+    @include respond-to($phone){
+        padding: 0 0 2em 0em;
+    }
+}
+.port-nav{
+    padding: 0;
+    float: right;
+}
+.port-nav-item{
+    margin: 1em;
+    display: inline-block; 
+    @include respond-to($phone){
+        margin: .1em;
+    }   
+}
+.port-nav-link{
+    font-size: 14px;
+    color: $gray;
+    text-decoration: none;
+    font-family: 'notobold';
+    @include respond-to($phone){
+        font-size: 11px;
+    } 
+}
+.port-nav-link:hover{
+    color: $lightblue;
+    padding: .3em 1em;
+    border: .2em solid $lightblue;
+}
+.photos{
+    padding:1em;
+    @include respond-to($phone){
+       padding: 0em 0 1.5em 1em;
+    }
+}
+//Default section
+.default{
+    background:$gray;
+    padding: 3em 10em;
+    margin: 0em;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.title-default{
+    font-size: 30px;
+    font-family: 'notolight';
+    color: #fff;
+    margin: 0 0 0 -.3em;
+    @include respond-to($phone){
+        font-size: 20px;
+    }
+
+}
+.description-default{
+    font-size: 12px;
+    font-family: "notoregular";
+    text-align: justify;
+    padding-right: 7em;
+    margin: 0 0 2em -1em;
+    color: #fff;
+    text-align: justify;
+    @include respond-to($phone){
+        padding-right: 0em;
+        margin: 0 0 2em 0em;
+    }
+}
+.btn-default{
+   text-decoration: none;
+   color: $darkgray;
+   padding: .6em 2em;
+   text-align: center;
+   margin-left: -0.9em;
+   width: 20%;
+   border: .3em solid $darkgray;
+   font-size: 14px;
+   font-family: 'NotoBold';
+   @include respond-to($phone){
+    margin-left: 0
+}
+  
+}
+.btn-default:hover{
+    color: $lightblue;
+    border: .3em solid $lightblue;
+}
+.video{
+    @include respond-to($phone){
+        height: auto;
+        width: auto;
+        margin: 1.5em 0em 0em -1em;
+    }
+    .vp-center{
+        padding: 0em;
+        display: none;
+        display: none;
+        width: auto;
+        justify-content: none;
+    }
+}
+//Twitter section
+.twitter{
+    background: #4bcaff;
+    padding: 4em 10em;
+    margin: 0em;
+    color: #fff;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.twitter-logo{
+    font-size: 30px;
+    font-family: 'notolight';
+    padding: 0em;
+    margin: 0em;
+    @include respond-to($phone){
+        font-size: 25px;
+    }
+}
+.img-twitter{
+    float: right;
+}
+.description-twitter{
+    padding: 1em 0;
+    font-family: 'notolight';
+    font-size: 28px;
+    @include respond-to($phone){
+        font-size: 19px;
+    }
+}
+.cheesecake-title{
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'notoregular';
+    @include respond-to($phone){
+        font-size: 20px;
+    }
+}
+.cheesecake-title:hover{
+    color: #515f67;
+}
+//John Section
+.john-information{
+    color: #fff;
+    background: url(../imgs/camera.jpg);
+    padding: 6em 10em;
+    margin: 0em;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.description-john{
+    font-size: 14px;
+    font-family: 'notoregular';
+    padding: 0 1em 2em 0 ;
+    text-align: justify;
+    @include respond-to($phone){
+        padding: 0 0 1em 0;
+        font-size: 12px;
+    }
+}
+.title-john{
+    font-size: 30px;
+    font-family: 'notolight';
+    padding: 0em;
+    margin: 0em;
+    @include respond-to($phone){
+        font-size: 25px;
+    }
+}
+.john-bar{
+    margin: 0em;
+    padding: 0;
+    width: 100%;
+}
+.john-nav{
+    padding: 1em 0;
+    margin: 0em;
+    @include respond-to($phone){
+    padding: 1em 0 1em 0;
+    }
+}
+.john-nav-item{
+    margin: 0 1em 0 0 ;
+    display: inline-block;
+    @include respond-to($phone){
+    margin: .0;       
+    }  
+}
+.john-nav-link{
+    text-decoration: none;
+    padding: 1em;
+    border: .2em solid #fff;
+    @include respond-to($phone){
+        padding:1.19em;       
+    } 
+}
+.john-nav-link:hover{
+    border: .2em solid $lightblue;
+}
+//Testimonial Section
+.testimonial{
+    color: #fff;
+    background: #fff;
+    padding: 2em 10em;
+    margin: 0em;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.testimonial-logo{
+    color: $gray;
+    font-size: 30px;
+    font-family:'notolight' ;
+    padding: 0em;
+    margin: 0;
+    @include respond-to($phone){
+        font-size: 25px;
+    }
+}
+.comillas{
+    float: right;
+    margin: 0;
+    padding: 0em;
+}
+.description-testimonial{
+    color: $gray;
+    font-size: 28px;
+    font-family: 'notolight';
+    padding: 0em;
+    margin: 0em;
+    @include respond-to($phone){
+        font-size: 17px;
+    }
+}
+.walter{
+    color: $lightblue;
+    padding: 0em;
+    font-size: 14px;
+    font-family: 'notobold';
+}
+//Contact Section
+.contact{
+    background: url(../imgs/contact.jpg);
+    padding: 5em 10em;
+    margin: 0em;
+    color: #fff;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.contact-title{
+    font-size: 30px;
+    font-family: 'notolight';
+    color: #fff;
+    margin: 0em;
+    padding: 0em;
+    @include respond-to($phone){
+        font-size: 25px;
+    }
+}
+.title-form{
+    font-size: 14px;
+    font-family: 'notobold';
+    @include respond-to($phone){
+        font-size: 12px;
+    }
+}
+.box{
+    width: 90%;
+    height: 3em;
+    color: none;
+    background-color:transparent ;
+    border: .1em solid #fff;
+}
+.box-message{
+    background-color: transparent;
+    border: .2em solid #fff;
+    margin: 0 0 2em 0;
+    resize: none;
+    width: 100%;
+    @include respond-to($phone){
+        width: 100%;
+        height: 50%;
+    }
+}
+.description-form{
+    font-size: 14px;
+    font-family: 'notoregular';
+    padding: 0 3em 1em 1em; 
+    @include respond-to($phone){
+        font-size: 12px;
+    }  
+}
+.btn-send{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'notobold';
+    background-color: $lightblue;
+    text-align: center;
+    width: 20%;
+    padding: 1em 2em;
+    @include respond-to($phone){
+        width: 50%;
+    }
+}
+//Footer
+.footer-section{
+    margin: 0;
+    padding: 4em 10em;
+    background: $darkgray;
+    @include respond-to($phone){
+        padding: 1em 3em;
+    }
+}
+.footer-nav{
+    margin: -0.5em 0;
+    padding: 0em;
+    float: left;
+}
+.footer-nav-item{
+    margin: 0 .5em 0 0;
+    display: inline-block;
+}
+.footer-nav-link{
+    text-decoration: none;
+    font-size: 12px;
+    color: $gray;
+    font-family: 'notoregular';
+    @include respond-to($phone){
+        font-size: 10px;
+    }
+}
+.footer-nav-link:hover{
+    color: $lightblue;
+}
+.copy{
+    margin: 0em;
+    float: right;
+    font-size: 12px;
+    font-family:'notoregular';
+    color: $gray;
+    @include respond-to($phone){
+        margin: -.2em 0 0 0;
+    }
+}
