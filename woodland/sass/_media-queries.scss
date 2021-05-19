@@ -32,7 +32,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         }
         //-----------------Logo------------------
         .logo{
-            margin:0em 7em;
+            margin:0em 1em;
         }
         .img-logo{
             max-width: 90px;
@@ -47,7 +47,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             position: absolute;
             display: block;
             width: 37%;
-            left: 43em;
+            left: 49em;
             top: 1em;
             height: 20%;
             margin: 0;
@@ -70,7 +70,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         //--------------------Top-Search-----------------
         .top-nav-search{
             position: relative;
-            top: 25em;
+            top: 22em;
             left: -12em;
             height: none;
             background: none;
@@ -126,9 +126,11 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .explore-description{
             font-size: 22px;
         }
+        
         .img-explore{
             max-width: 290px;
-            max-height: 381px;
+            max-height: 391px;
+            padding: .5em;
         }
         .see-more-dark{
             font-size: 30px;
@@ -144,8 +146,11 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             font-size: 22px;
         }
         .img-camping{
-            max-width: 438px;
-            max-height: 335px;
+            max-width: 439px;
+            max-height: 357px;
+        }
+        .col-camping{
+            padding: 1em 0.5em;
         }
         .see-more-light{
             padding: 1em 3em;
@@ -164,12 +169,15 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             padding: 5em 20em;
         }
         .img-chirripo{
-            max-width: 437px;
-            max-height: 173px;
+            max-width: 441px;
+            max-height: 176px;
+        }
+        .col-hikes{
+            padding: 0 ;
         }
         .img-chirripo-principal{
-            max-width: 437px;
-            max-height: 670px;
+            max-width: 431px;
+            max-height: 680px;
         }
         //-------------------Night Section-----------------
         .night-section-dark{
@@ -192,33 +200,32 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             font-size: 26px;
         }
         .moon-icon{
-            top: 257.5em;
+            top: 260.5em;
             left: 25.3em;
             max-width: 125px;
             max-height: 125px;
         }
         .meteor-icon{
-            top: 257.5em;
+            top: 260.5em;
             left: 43.3em;
             max-width: 125px;
             max-height: 125px;
         }
         .stars-icon{
-            top: 257.5em;
+            top: 260.5em;
             left: 62em;
             max-width: 125px;
             max-height: 125px;
         }
         .night-section-light{
-            padding: 2em 20em 5em;;
+            padding:2em 20em 5em;
         }
         .night-section-dark{
            padding: 2em 20em 13em;;
         }
         //-------------------Footer Section-----------------
          .container-image-footer{
-            //padding: 5em 20em;
-            padding: 24em 20em 2em 20em;
+            padding: 19em 14em 1.5em 14em;
         }
         .image-footer{
             background: url(../imgs/desktop/footer-desktop.png);
@@ -227,6 +234,9 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         }
         .contact-footer{
             font-size: 30px;
+        }
+        .contact-footer:hover{
+            font-size: 32px;
         }
         .footer-icon-insta{
             max-width: 60px;

@@ -9,6 +9,12 @@ $white: #fff;
 $dark-green: #364E51;
 $orange: #F3B61C;
 $blue-light:#0D9CA4;
+//----------Tipografias-------//
+$light: 100;
+$regular: 400;
+$semibold: 500;
+$bold: 700;
+$black: 800;
 //----------Colors--------//
 //----------Menu--------//
 .mob-menu{
@@ -26,14 +32,6 @@ $blue-light:#0D9CA4;
     font-size: 1.7em;
     float: right;
     margin: -.8em 1em 0em 0em;
-}
-.top-menu{
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-    padding: .5em 1em;
-    font-family: "notobold"; 
-    text-decoration: none; 
 }
 //----------Menu--------//
 //----------Top-image--------//
@@ -60,7 +58,7 @@ $blue-light:#0D9CA4;
     left: -25em;
     width: 80%;
     height: 100%;
-    padding: 3em 0 0;
+    padding: 3em 0 0 0;
     background: $dark-green;
     transition: 0.5s;
     z-index: 2;
@@ -70,8 +68,10 @@ $blue-light:#0D9CA4;
 .top-menu{
     font-size: 35px;
     color: #fff;
-    padding: 0.1em 1em 0.1em 2em;
+    padding: .5em 2em 0em 2em;
     font-family: "Myriad Pro";
+    display: block;
+    text-align: center;
 }
 .top-nav-item{
     margin: 2.5em 1em;
@@ -79,13 +79,13 @@ $blue-light:#0D9CA4;
 }
 .top-nav-link{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 21px;
     color: #fff;
-    font-family: "Myriad Pro";
+    font-weight: $semibold;
 }
 .top-nav-link:hover{
     color: $orange ;
-    font-size: 24px;
+    font-size: 23px;
 }
 .icon-menu{
     padding: 0em 2em;
@@ -105,12 +105,16 @@ $blue-light:#0D9CA4;
     left: -25em;
     width: 80%;
     height: 100%;
-    padding: 3em 0 0;
+    padding: 3em 0 0 0;
     background: $dark-green;
     transition: 0.5s;
     z-index: 2;
     float: right;
     margin: 0;
+}
+.ul-search{
+    margin: 0;
+    padding: 0;
 }
 .box-search{
     width: 73%;
@@ -142,7 +146,7 @@ $blue-light:#0D9CA4;
     display: inline-block;
 }
 .category{
-    padding:  0em 1em;
+    padding: 0em 4em 0 1em;
     margin: 0em;
 }
 //----------Top-navigation--------//
@@ -170,22 +174,23 @@ $blue-light:#0D9CA4;
 h2{
     font-size: 21px;
     font-family:  "Myriad Pro";
-    font-weight: 700;
+    font-weight: $bold;
 }
 h3{
     padding: .5em 0 0 0;
     font-size: 18px;
     font-family:  "Myriad Pro";
-    font-weight: 400;
+    font-weight: $regular;
 }
 .special-description{
     font-size: 12px;
     font-family:  "Myriad Pro";
-    font-weight: 100;
+    font-weight: $light;
     padding-bottom: 0 ;
 }
 .special-buttom{
     font-size: 12px;
+    font-weight: $regular;
     color: $blue-light;
     border: .1em solid $blue-light;
     text-align: center;
@@ -213,7 +218,7 @@ h3{
 }
 .explore-description{
     font-size: 13px;
-    font-weight: 100;
+    font-weight: $light;
 }
 .center{
     text-align: center;
@@ -224,6 +229,7 @@ h3{
     text-decoration: none;
     color: $dark-green;
     font-size: 15px;
+    font-weight: $bold;
 }
 .see-more-dark:hover{
     color: $orange;
@@ -250,15 +256,16 @@ h3{
     padding: 0 .1em ;
 }
 .see-more-light{
-    padding: 1em 3em;
+    padding: 1em 2.5em;
     text-align: center;
     text-decoration: none;
     color: $blue-light;
     font-size: 15px;
+    font-weight: $bold;
 }
 .camping-hikes-description{
     font-size: 14px;
-    font-weight: 100;
+    font-weight: $light;
 }
 .see-more-light:hover{
     color: $orange;
@@ -266,6 +273,7 @@ h3{
 }
 .text-col-camping{
     font-size: 16px;
+    font-weight: $regular;
 }
 //----------Camping---------//
 //----------Hikes--------//
@@ -276,18 +284,18 @@ h3{
     color: $white;
     font-family: "Myriad Pro";
 }
-.col-hikes{
-    padding: 0 .1em ;
-}
 .img-chirripo{
-    max-width: 152px;
-    max-height: 61px;
+    max-width: 157px;
+    max-height: 63px;
 }
 .img-chirripo-principal{
-    max-width: 152px;
-    max-height: 231px;
+    max-width: 155px;
+    max-height: 243px;
 }
-
+col{
+    padding: 0;
+    margin: 0;
+}
 //----------Hikes--------//
 //----------Night--------//
 .night-section{
@@ -326,16 +334,17 @@ h3{
 }
 .night-description{
     font-size: 11px;
-    font-weight: 100;
+    font-weight: $light;
     padding: .5em;
 }
 .night-title{
     font-size: 25px;
-    font-weight: 400;
+    font-weight: $regular;
     padding-top: 1em;
 }
 .night-buttom{
-    font-size: 12px;
+    font-size: 12px; 
+    font-weight: $regular;
     color: #0D9CA4;
     border: 0.1em solid #0D9CA4;
     margin: 0 1.5em;
@@ -361,6 +370,7 @@ h3{
     color: $white;
     font-family: "Myriad Pro";
     font-size: 18px;
+    font-weight: $regular;
 }
 .contact-footer:hover{
     font-size: 20px;

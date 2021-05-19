@@ -17,7 +17,7 @@
     padding: 15em;
   }
   body .logo {
-    margin: 0em 7em;
+    margin: 0em 1em;
   }
   body .img-logo {
     max-width: 90px;
@@ -31,7 +31,7 @@
     position: absolute;
     display: block;
     width: 37%;
-    left: 43em;
+    left: 49em;
     top: 1em;
     height: 20%;
     margin: 0;
@@ -53,7 +53,7 @@
   }
   body .top-nav-search {
     position: relative;
-    top: 25em;
+    top: 22em;
     left: -12em;
     height: none;
     background: none;
@@ -109,7 +109,8 @@
   }
   body .img-explore {
     max-width: 290px;
-    max-height: 381px;
+    max-height: 391px;
+    padding: 0.5em;
   }
   body .see-more-dark {
     font-size: 30px;
@@ -124,8 +125,11 @@
     font-size: 22px;
   }
   body .img-camping {
-    max-width: 438px;
-    max-height: 335px;
+    max-width: 439px;
+    max-height: 357px;
+  }
+  body .col-camping {
+    padding: 1em 0.5em;
   }
   body .see-more-light {
     padding: 1em 3em;
@@ -143,12 +147,15 @@
     padding: 5em 20em;
   }
   body .img-chirripo {
-    max-width: 437px;
-    max-height: 173px;
+    max-width: 441px;
+    max-height: 176px;
+  }
+  body .col-hikes {
+    padding: 0;
   }
   body .img-chirripo-principal {
-    max-width: 437px;
-    max-height: 670px;
+    max-width: 431px;
+    max-height: 680px;
   }
   body .night-section-dark {
     padding: 5em 20em;
@@ -170,19 +177,19 @@
     font-size: 26px;
   }
   body .moon-icon {
-    top: 257.5em;
+    top: 260.5em;
     left: 25.3em;
     max-width: 125px;
     max-height: 125px;
   }
   body .meteor-icon {
-    top: 257.5em;
+    top: 260.5em;
     left: 43.3em;
     max-width: 125px;
     max-height: 125px;
   }
   body .stars-icon {
-    top: 257.5em;
+    top: 260.5em;
     left: 62em;
     max-width: 125px;
     max-height: 125px;
@@ -194,7 +201,7 @@
     padding: 2em 20em 13em;
   }
   body .container-image-footer {
-    padding: 24em 20em 2em 20em;
+    padding: 19em 14em 1.5em 14em;
   }
   body .image-footer {
     background: url(../imgs/desktop/footer-desktop.png);
@@ -203,6 +210,9 @@
   }
   body .contact-footer {
     font-size: 30px;
+  }
+  body .contact-footer:hover {
+    font-size: 32px;
   }
   body .footer-icon-insta {
     max-width: 60px;
@@ -234,15 +244,6 @@
   margin: -0.8em 1em 0em 0em;
 }
 
-.top-menu {
-  font-size: 40px;
-  text-align: center;
-  color: #fff;
-  padding: 0.5em 1em;
-  font-family: "notobold";
-  text-decoration: none;
-}
-
 .image-header {
   background: url(../imgs/header-main.png);
   background-size: cover;
@@ -268,7 +269,7 @@
   left: -25em;
   width: 80%;
   height: 100%;
-  padding: 3em 0 0;
+  padding: 3em 0 0 0;
   background: #364E51;
   transition: 0.5s;
   z-index: 2;
@@ -279,8 +280,10 @@
 .top-menu {
   font-size: 35px;
   color: #fff;
-  padding: 0.1em 1em 0.1em 2em;
+  padding: 0.5em 2em 0em 2em;
   font-family: "Myriad Pro";
+  display: block;
+  text-align: center;
 }
 
 .top-nav-item {
@@ -290,14 +293,14 @@
 
 .top-nav-link {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 21px;
   color: #fff;
-  font-family: "Myriad Pro";
+  font-weight: 500;
 }
 
 .top-nav-link:hover {
   color: #F3B61C;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .icon-menu {
@@ -319,12 +322,17 @@
   left: -25em;
   width: 80%;
   height: 100%;
-  padding: 3em 0 0;
+  padding: 3em 0 0 0;
   background: #364E51;
   transition: 0.5s;
   z-index: 2;
   float: right;
   margin: 0;
+}
+
+.ul-search {
+  margin: 0;
+  padding: 0;
 }
 
 .box-search {
@@ -362,7 +370,7 @@
 }
 
 .category {
-  padding: 0em 1em;
+  padding: 0em 4em 0 1em;
   margin: 0em;
 }
 
@@ -411,6 +419,7 @@ h3 {
 
 .special-buttom {
   font-size: 12px;
+  font-weight: 400;
   color: #0D9CA4;
   border: 0.1em solid #0D9CA4;
   text-align: center;
@@ -453,6 +462,7 @@ h3 {
   text-decoration: none;
   color: #364E51;
   font-size: 15px;
+  font-weight: 700;
 }
 
 .see-more-dark:hover {
@@ -483,11 +493,12 @@ h3 {
 }
 
 .see-more-light {
-  padding: 1em 3em;
+  padding: 1em 2.5em;
   text-align: center;
   text-decoration: none;
   color: #0D9CA4;
   font-size: 15px;
+  font-weight: 700;
 }
 
 .camping-hikes-description {
@@ -502,6 +513,7 @@ h3 {
 
 .text-col-camping {
   font-size: 16px;
+  font-weight: 400;
 }
 
 .hikes-section {
@@ -512,18 +524,19 @@ h3 {
   font-family: "Myriad Pro";
 }
 
-.col-hikes {
-  padding: 0 0.1em;
-}
-
 .img-chirripo {
-  max-width: 152px;
-  max-height: 61px;
+  max-width: 157px;
+  max-height: 63px;
 }
 
 .img-chirripo-principal {
-  max-width: 152px;
-  max-height: 231px;
+  max-width: 155px;
+  max-height: 243px;
+}
+
+col {
+  padding: 0;
+  margin: 0;
 }
 
 .night-section {
@@ -580,6 +593,7 @@ h3 {
 
 .night-buttom {
   font-size: 12px;
+  font-weight: 400;
   color: #0D9CA4;
   border: 0.1em solid #0D9CA4;
   margin: 0 1.5em;
@@ -607,6 +621,7 @@ h3 {
   color: #fff;
   font-family: "Myriad Pro";
   font-size: 18px;
+  font-weight: 400;
 }
 
 .contact-footer:hover {
