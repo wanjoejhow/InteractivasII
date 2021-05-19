@@ -1,0 +1,241 @@
+$phone : '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), (min-resolution: 1.5dppx)';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+@mixin respond-to($large-desktop) {
+    @media only screen and #{$large-desktop} {
+        @content;
+        .mob-menu{
+            display: none;        
+        }
+        .mob-search{
+            display: none;
+        }
+        .mob-close{
+            display: none;
+        }
+        .image-header{
+            background: url(../imgs/desktop/header-desktop.png);
+            background-size: cover;
+            background-repeat: none;
+        }
+        .container-image{
+            padding: 15em;
+        }
+        //-----------------Logo------------------
+        .logo{
+            margin:0em 7em;
+        }
+        .img-logo{
+            max-width: 90px;
+            max-height: 70px;
+        }
+        //-----------------Top bar----------------
+        .top-bar{
+            padding: 2em 13em;
+        }
+        .top-nav{
+            background: none;
+            position: absolute;
+            display: block;
+            width: 37%;
+            left: 43em;
+            top: 1em;
+            height: 20%;
+            margin: 0;
+            padding: 0;       
+        }
+        .top-nav-link:hover{
+            font-size: 24px ;
+        }
+        .top-menu{
+            display: none;
+        }
+        .top-nav-item{
+            margin: 3em 1em 0em 0;
+            display: inline-block;
+        }
+        .icon-menu{
+            display: none;
+            padding: 1em;
+        }
+        //--------------------Top-Search-----------------
+        .top-nav-search{
+            position: relative;
+            top: 25em;
+            left: -12em;
+            height: none;
+            background: none;
+            margin: 0;
+            width: 60%;
+            padding: 0em;
+            margin: 0em;
+        }
+        .box-search{
+            width: 80%;
+        }
+        .mob-search-small{
+            font-size: 2em;
+            float: none;
+            padding: 0em;
+            margin: 0em;
+        }
+        .category{
+            padding:0em 7em 0em 1em;
+        }
+        //-------------------Special Section-----------------
+        .special-section{
+            padding: 5em 20em;
+        }
+        .col-special-description{
+            padding: 7.5em 0;
+        }
+        .img-special-event{
+            max-width: 392px;
+            max-height: 545px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        h3{
+            padding: 0;
+            font-size: 25px;
+        }
+        .special-description{
+            font-size: 21px;
+            padding-bottom: 1em;
+        }
+        .special-buttom{
+            font-size: 26px;
+        }
+        .special-buttom:hover{
+            font-size: 28px;
+        }
+        //-------------------Explore Section-----------------
+        .explore-cr-section{
+            padding: 5em 20em;
+        }
+        .explore-description{
+            font-size: 22px;
+        }
+        .img-explore{
+            max-width: 290px;
+            max-height: 381px;
+        }
+        .see-more-dark{
+            font-size: 30px;
+        }
+        .see-more-dark:hover{
+            font-size: 32px;
+        }
+        //-------------------Camping Section-----------------
+         .camping-section{
+            padding: 5em 20em;
+        }
+        .camping-hikes-description{
+            font-size: 22px;
+        }
+        .img-camping{
+            max-width: 438px;
+            max-height: 335px;
+        }
+        .see-more-light{
+            padding: 1em 3em;
+            font-size: 32px;
+        }
+        .see-more-light:hover{
+            font-size: 30px;
+        }
+        .text-col-camping{
+            font-size: 22px;
+            padding: 1em 3em;
+            font-size: 34px;
+        }
+        //-------------------Hikes Section-----------------
+         .hikes-section{
+            padding: 5em 20em;
+        }
+        .img-chirripo{
+            max-width: 437px;
+            max-height: 173px;
+        }
+        .img-chirripo-principal{
+            max-width: 437px;
+            max-height: 670px;
+        }
+        //-------------------Night Section-----------------
+        .night-section-dark{
+            padding: 5em 20em;
+        }
+        .night-description{
+            font-size: 20px;
+            padding: .5em;
+        }
+        .night-title{
+            font-size: 30px;
+            padding-top: 3em;
+        }
+        .night-buttom{
+            font-size: 24px;
+            padding: .2em 1em;
+            margin: 0 0 0 3.6em;
+        }
+        .night-buttom:hover{
+            font-size: 26px;
+        }
+        .moon-icon{
+            top: 257.5em;
+            left: 25.3em;
+            max-width: 125px;
+            max-height: 125px;
+        }
+        .meteor-icon{
+            top: 257.5em;
+            left: 43.3em;
+            max-width: 125px;
+            max-height: 125px;
+        }
+        .stars-icon{
+            top: 257.5em;
+            left: 62em;
+            max-width: 125px;
+            max-height: 125px;
+        }
+        .night-section-light{
+            padding: 2em 20em 5em;;
+        }
+        .night-section-dark{
+           padding: 2em 20em 13em;;
+        }
+        //-------------------Footer Section-----------------
+         .container-image-footer{
+            //padding: 5em 20em;
+            padding: 24em 20em 2em 20em;
+        }
+        .image-footer{
+            background: url(../imgs/desktop/footer-desktop.png);
+            background-size: cover;
+            background-repeat: none;
+        }
+        .contact-footer{
+            font-size: 30px;
+        }
+        .footer-icon-insta{
+            max-width: 60px;
+            max-height: 60px;
+        }
+        .footer-icon-face{
+            max-width: 60px;
+            max-height: 60px;
+            margin-left: 2em;
+        }
+        }
+    }

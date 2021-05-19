@@ -1,0 +1,379 @@
+@import 'media-queries';
+
+
+body{
+    @include respond-to($large-desktop);
+}
+//----------Colors--------//
+$white: #fff;
+$dark-green: #364E51;
+$orange: #F3B61C;
+$blue-light:#0D9CA4;
+//----------Colors--------//
+//----------Menu--------//
+.mob-menu{
+    color: #fff;
+    font-size: 1.7em;
+    display: inline-block;
+}
+.mob-search{
+    color: #fff;
+    font-size: 1.7em;
+    float: right;
+}
+.mob-close{
+    color: $white;
+    font-size: 1.7em;
+    float: right;
+    margin: -.8em 1em 0em 0em;
+}
+.top-menu{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding: .5em 1em;
+    font-family: "notobold"; 
+    text-decoration: none; 
+}
+//----------Menu--------//
+//----------Top-image--------//
+.image-header{
+    background: url(../imgs/header-main.png);
+    background-size: cover;
+}
+.container-image{
+    padding: 7em;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+//----------Top-image--------//
+//----------Top-navigation--------//
+.top-bar{
+    padding: 1.5em 2em;
+    width: 100%;
+}
+.top-nav{
+    position: fixed;
+    top: 0;
+    left: -25em;
+    width: 80%;
+    height: 100%;
+    padding: 3em 0 0;
+    background: $dark-green;
+    transition: 0.5s;
+    z-index: 2;
+    float: right;
+    margin: 0;
+}
+.top-menu{
+    font-size: 35px;
+    color: #fff;
+    padding: 0.1em 1em 0.1em 2em;
+    font-family: "Myriad Pro";
+}
+.top-nav-item{
+    margin: 2.5em 1em;
+    display: block;
+}
+.top-nav-link{
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    font-family: "Myriad Pro";
+}
+.top-nav-link:hover{
+    color: $orange ;
+    font-size: 24px;
+}
+.icon-menu{
+    padding: 0em 2em;
+}
+//----------Logo--------//
+.logo{
+    margin:0em 0em 0em 6.5em;
+}
+.img-logo{
+    max-width: 54px;
+    max-height: 42px;
+}
+//----------Search--------//
+.top-nav-search{
+    position: fixed;
+    top: 0;
+    left: -25em;
+    width: 80%;
+    height: 100%;
+    padding: 3em 0 0;
+    background: $dark-green;
+    transition: 0.5s;
+    z-index: 2;
+    float: right;
+    margin: 0;
+}
+.box-search{
+    width: 73%;
+    height: 2.5em;
+    border-radius: .7em;
+    color: $white;
+    background-color: transparent;
+    border: 0.1em solid $white;
+    color: $white;
+    margin: 1em;
+}
+.mob-search-small{
+    color: #fff;
+    font-size: 1.5em;
+    float: right;
+    margin: 1.2em 1em 0 0;
+}
+.top-nav-search-link{
+    text-decoration: none;
+    font-size: 14px;
+    color: #0D9CA4;
+    font-family: "Myriad Pro";
+}
+.top-nav-search-link:hover{
+    color: #F3B61C;
+}
+.top-nav-search-item {
+    margin: 0em 0.1em;
+    display: inline-block;
+}
+.category{
+    padding:  0em 1em;
+    margin: 0em;
+}
+//----------Top-navigation--------//
+
+//----------Special Event--------//
+.special-section{
+    background-color: $dark-green;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    font-family: "Myriad Pro";
+}
+.col-special{
+    margin: 0;
+    padding: 0 1em 0 0 ;
+}
+.img-special-event{
+    max-width: 167px;
+    max-height: 237px;
+}
+.col-special-description{
+    margin: 0;
+    padding: 1.5em 0em;
+}
+h2{
+    font-size: 21px;
+    font-family:  "Myriad Pro";
+    font-weight: 700;
+}
+h3{
+    padding: .5em 0 0 0;
+    font-size: 18px;
+    font-family:  "Myriad Pro";
+    font-weight: 400;
+}
+.special-description{
+    font-size: 12px;
+    font-family:  "Myriad Pro";
+    font-weight: 100;
+    padding-bottom: 0 ;
+}
+.special-buttom{
+    font-size: 12px;
+    color: $blue-light;
+    border: .1em solid $blue-light;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5em;
+    padding: 0.5em 2em;
+}
+.special-buttom:hover{
+    color: $orange;
+    border: .1em solid $orange;
+    font-size: 14px;
+}
+//----------Special Event--------//
+//----------Explore Costa Rica--------//
+.explore-cr-section{
+    background-color: $blue-light;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    font-family: "Myriad Pro";
+}
+.img-explore{
+    max-width: 102px;
+    max-height: 132px;
+}
+.explore-description{
+    font-size: 13px;
+    font-weight: 100;
+}
+.center{
+    text-align: center;
+}
+.see-more-dark{
+    padding: 1em ;
+    text-align: center;
+    text-decoration: none;
+    color: $dark-green;
+    font-size: 15px;
+}
+.see-more-dark:hover{
+    color: $orange;
+    font-size: 17px;
+}
+.div{
+    padding: 0;
+    margin: 0;
+}
+//----------Explore Costa Rica--------//
+//----------Camping--------//
+.camping-section{
+    background-color: $dark-green;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    font-family: "Myriad Pro";
+}
+.img-camping{
+    max-width: 151px;
+    max-height: 124px;
+}
+.col-camping{
+    padding: 0 .1em ;
+}
+.see-more-light{
+    padding: 1em 3em;
+    text-align: center;
+    text-decoration: none;
+    color: $blue-light;
+    font-size: 15px;
+}
+.camping-hikes-description{
+    font-size: 14px;
+    font-weight: 100;
+}
+.see-more-light:hover{
+    color: $orange;
+    font-size: 17px;
+}
+.text-col-camping{
+    font-size: 16px;
+}
+//----------Camping---------//
+//----------Hikes--------//
+.hikes-section{
+    background-color: $dark-green;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    font-family: "Myriad Pro";
+}
+.col-hikes{
+    padding: 0 .1em ;
+}
+.img-chirripo{
+    max-width: 152px;
+    max-height: 61px;
+}
+.img-chirripo-principal{
+    max-width: 152px;
+    max-height: 231px;
+}
+
+//----------Hikes--------//
+//----------Night--------//
+.night-section{
+    margin: 0;
+    color: $white;
+    font-family: "Myriad Pro";
+}
+.night-section-light{
+    padding: 2em 2em;
+    background-color: $blue-light;
+}
+.night-section-dark{
+    padding: 3em 2em;
+    background-color: $dark-green;
+}
+.moon-icon{
+    position: absolute;
+    top: 131.5em;
+    left: 9.5em;
+    max-width: 66px;
+    max-height: 66px;
+}
+.meteor-icon{
+    position: absolute;
+    top: 131.5em;
+    left: 3em;
+    max-width: 66px;
+    max-height: 66px;
+}
+.stars-icon{
+    position: absolute;
+    top: 131.5em;
+    left: 16.3em;
+    max-width: 66px;
+    max-height: 66px;
+}
+.night-description{
+    font-size: 11px;
+    font-weight: 100;
+    padding: .5em;
+}
+.night-title{
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 1em;
+}
+.night-buttom{
+    font-size: 12px;
+    color: #0D9CA4;
+    border: 0.1em solid #0D9CA4;
+    margin: 0 1.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+.night-buttom:hover{
+    color: $orange;
+    border: .1em solid $orange;
+}
+//----------Night--------//
+//----------Footer--------//
+.image-footer{
+    background: url(../imgs/footer.png);
+    background-size: cover;
+}
+.container-image-footer{
+    padding: 6em 2em 2em 2em;
+}
+.contact-footer{
+    text-decoration: none;
+    color: $white;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+}
+.contact-footer:hover{
+    font-size: 20px;
+    color: $orange;
+}
+.footer-icon-insta{
+    float: right;
+    max-width: 30px;
+    max-height: 30px;
+}
+.footer-icon-face{
+    float: right;
+    margin-left: 1em;
+    max-width: 30px;
+    max-height: 30px;
+}
