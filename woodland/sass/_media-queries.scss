@@ -26,6 +26,8 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             background: url(../imgs/desktop/header-desktop.png);
             background-size: cover;
             background-repeat: none;
+            max-width: 1520px;
+            max-height: 610px;
         }
         .container-image{
             padding: 15em;
@@ -46,18 +48,21 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             background: none;
             position: absolute;
             display: block;
-            width: 37%;
-            left: 49em;
+            width: 50%;
+            left: 34em;
             top: 1em;
             height: 20%;
             margin: 0;
             padding: 0;       
         }
         .top-nav-link:hover{
-            font-size: 24px ;
+            font-size: 20px ;
         }
         .top-menu{
             display: none;
+        }
+        .top-nav-link{
+            font-size: 22px;
         }
         .top-nav-item{
             margin: 3em 1em 0em 0;
@@ -71,7 +76,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .top-nav-search{
             position: relative;
             top: 22em;
-            left: -12em;
+            left: -10.5em;
             height: none;
             background: none;
             margin: 0;
@@ -98,12 +103,16 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .col-special-description{
             padding: 7.5em 0;
         }
-        .img-special-event{
-            max-width: 392px;
-            max-height: 545px;
-        }
+
         h2{
             font-size: 50px;
+        }
+        .img-special-event-1{
+            max-width: 358px;
+            max-height: 490px;
+        }
+        h1{
+            font-size: 40px;
         }
         h3{
             padding: 0;
@@ -128,7 +137,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         }
         
         .img-explore{
-            max-width: 290px;
+            max-width: 243px;
             max-height: 391px;
             padding: .5em;
         }
@@ -146,8 +155,8 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             font-size: 22px;
         }
         .img-camping{
-            max-width: 439px;
-            max-height: 357px;
+            max-width: 367px;
+            max-height: 310px;
         }
         .col-camping{
             padding: 1em 0.5em;
@@ -169,22 +178,22 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             padding: 5em 20em;
         }
         .img-chirripo{
-            max-width: 441px;
-            max-height: 176px;
+            max-width: 371px;
+            max-height: 162px;
         }
         .col-hikes{
             padding: 0 ;
         }
         .img-chirripo-principal{
-            max-width: 431px;
-            max-height: 680px;
+            max-width: 376px;
+            max-height: 571px;
         }
         //-------------------Night Section-----------------
         .night-section-dark{
-            padding: 5em 20em;
+            padding: 1em 20em 6em;
         }
         .night-description{
-            font-size: 20px;
+            font-size: 18px;
             padding: .5em;
         }
         .night-title{
@@ -194,26 +203,26 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .night-buttom{
             font-size: 24px;
             padding: .2em 1em;
-            margin: 0 0 0 3.6em;
+            margin: 0 0 0 2.6em;
         }
         .night-buttom:hover{
             font-size: 26px;
         }
         .moon-icon{
-            top: 260.5em;
-            left: 25.3em;
+            top: 249.5em;
+            left: 39.5em;
             max-width: 125px;
             max-height: 125px;
         }
         .meteor-icon{
-            top: 260.5em;
-            left: 43.3em;
+            top: 249.5em;
+            left: 24em;
             max-width: 125px;
             max-height: 125px;
         }
         .stars-icon{
-            top: 260.5em;
-            left: 62em;
+            top: 249.5em;
+            left: 54.5em;
             max-width: 125px;
             max-height: 125px;
         }
@@ -225,7 +234,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         }
         //-------------------Footer Section-----------------
          .container-image-footer{
-            padding: 19em 14em 1.5em 14em;
+            padding: 12em 14em 1.5em 14em;
         }
         .image-footer{
             background: url(../imgs/desktop/footer-desktop.png);
@@ -238,14 +247,79 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .contact-footer:hover{
             font-size: 32px;
         }
-        .footer-icon-insta{
-            max-width: 60px;
-            max-height: 60px;
+        .footer-icon{
+            font-size: 4em;
+            padding: 0 0 0 1em;
         }
-        .footer-icon-face{
-            max-width: 60px;
-            max-height: 60px;
-            margin-left: 2em;
+        //--------------------------------Desktop specific section--------------------------------
+        .header-special-event{
+            max-width: 1520px;
+            max-height: 610px;
+            background: url(../imgs/desktop/header-specific-desktop.png);
+            background-size: cover;
+            background-repeat: none;
         }
+        //----------------------------------------Info section----------------------
+        .special-section-category{
+          padding: 5em 20em 2em 20em;
         }
-    }
+        .img-special-event-2{
+            max-width: 457px;
+            max-height: 423px;
+            }
+        .category-link{
+            font-size: 27px;
+            }
+        .category-title{
+            font-size: 22px;
+        }
+        .col-special-event{
+            padding: 6em 1em;
+        }
+        .category-description{
+            font-size: 18px;
+        }
+        .register-buttom{
+            max-width: 209px;
+            margin: auto;
+            font-size: 18px;
+        }
+        .register-buttom:hover{
+            font-size: 20px;
+        }
+        //---------------------------------------Related--------------------------------
+        .related-event{
+            padding: 2em 20em;
+            max-width: 1381px;
+            margin: 0;
+        }
+        .related-title{
+            font-size: 30px;
+        }
+        .img-related-event{
+            max-width: 143px;
+            max-height: 188px;
+        }
+        //--------------------------------------Footer-------------------------------
+        .container-footer{
+            padding: 1.5em 6em 0.3em
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+}

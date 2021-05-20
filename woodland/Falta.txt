@@ -1,1 +1,2 @@
 1.Optimizar img
+2.agregar eventos related

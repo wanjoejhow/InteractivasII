@@ -36,8 +36,10 @@ $black: 800;
 //----------Menu--------//
 //----------Top-image--------//
 .image-header{
-    background: url(../imgs/header-main.png);
+    background: url(../imgs/header.png);
     background-size: cover;
+    max-width: 493px;
+    max-height: 276px;
 }
 .container-image{
     padding: 7em;
@@ -102,7 +104,7 @@ $black: 800;
 .top-nav-search{
     position: fixed;
     top: 0;
-    left: -25em;
+    left: 24em;
     width: 80%;
     height: 100%;
     padding: 3em 0 0 0;
@@ -163,13 +165,18 @@ $black: 800;
     margin: 0;
     padding: 0 1em 0 0 ;
 }
-.img-special-event{
+.img-special-event-1{
     max-width: 167px;
     max-height: 237px;
 }
 .col-special-description{
     margin: 0;
     padding: 1.5em 0em;
+}
+h1{
+    font-size: 21px;
+    font-family:  "Myriad Pro";
+    font-weight: $bold;
 }
 h2{
     font-size: 21px;
@@ -304,7 +311,7 @@ col{
     font-family: "Myriad Pro";
 }
 .night-section-light{
-    padding: 2em 2em;
+    padding: 2em 2em 3em;
     background-color: $blue-light;
 }
 .night-section-dark{
@@ -313,21 +320,21 @@ col{
 }
 .moon-icon{
     position: absolute;
-    top: 131.5em;
+    top: 133.5em;
     left: 9.5em;
     max-width: 66px;
     max-height: 66px;
 }
 .meteor-icon{
     position: absolute;
-    top: 131.5em;
+    top: 133.5em;
     left: 3em;
     max-width: 66px;
     max-height: 66px;
 }
 .stars-icon{
     position: absolute;
-    top: 131.5em;
+    top: 133.5em;
     left: 16.3em;
     max-width: 66px;
     max-height: 66px;
@@ -376,14 +383,120 @@ col{
     font-size: 20px;
     color: $orange;
 }
-.footer-icon-insta{
+.footer-icon{
+    color: #fff;
+    font-size: 2em;
     float: right;
-    max-width: 30px;
-    max-height: 30px;
+    padding: 0 0 0 1em;
 }
-.footer-icon-face{
+.footer-icon:hover{
+    color: orange;
+}
+.footer-icon-small{
+    color: #fff;
+    font-size: 2em;
     float: right;
-    margin-left: 1em;
-    max-width: 30px;
-    max-height: 30px;
+    padding: 0 0 0 1em;
+}
+.footer-icon-small:hover{
+    color: orange;
+}
+//----------------------------------------------------Special Event-----------------------------------------------
+.header-special-event{
+    background: url(../imgs/header-specific-event.png);
+    background-size: cover;
+    max-width: 493px;
+    max-height: 276px;
+}
+//--------------info-----------------
+.col-special-specific-event{
+    margin: 0;
+    padding: 1.5em 0em;
+}
+.img-special-event-2{
+    max-width: 157px;
+    max-height: 217px;
+    padding: 0;
+    margin: 0;
+}
+.img-special-event-2{
+    max-width: 183px;
+    max-height: 176px;
+    padding: 0;
+    margin: 0;
+}
+
+.info-event{
+    padding: 0;
+    margin: 1em 0;
+}
+.category-description{
+    font-size: 12px;
+    font-weight: $light;
+    padding: 1em 1em;
+}
+.category-link{
+    text-decoration: none;
+    color: $white;
+    font-weight: $regular;
+    font-size: 15px;
+}
+.category-link:hover{
+    color:$orange;
+}
+.col-special-event{
+    margin: 0;
+    padding: .6em 1em 0 0 ;
+}
+.category-title{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    font-weight: $regular;
+}
+.special-section-category{
+    background: $dark-green;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    font-family: "Myriad Pro";
+}
+//--------------info-----------------
+//----------------------------Related Event----------------------
+.related-event{
+    padding: 1em 2em 2em;
+    background: $blue-light;
+    max-width: 387px;
+}
+.related-title{
+    color: $white;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    font-weight: $regular;
+}
+.img-related-event{
+    max-width: 56px;
+    max-height: 67px; 
+}
+.register-buttom{
+    font-size: 12px;
+    font-weight: $regular;
+    color: $white;
+    border: .1em solid $white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5em;
+    padding: 0.5em 2em;
+    max-width: 120px;
+    margin: auto;
+}
+.register-buttom:hover{
+    color: $orange;
+    border: .1em solid $orange;
+    font-size: 14px;
+}
+//----------------------------footer--------------------------------
+.container-footer{
+    padding: 1em;
+    background: $dark-green;
 }
