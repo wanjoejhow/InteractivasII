@@ -1,2 +1,7 @@
-1.Optimizar img
-2.agregar eventos related
+1.Optimizar img Revisar
+6.Crear ventana administrador
+7.position: absolute; de la clase de camping overlay- no me permite realizar hover.
+CONTACT- METERLO
+
+Desktop
+Tablet

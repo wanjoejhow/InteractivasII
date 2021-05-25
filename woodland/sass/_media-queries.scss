@@ -1,13 +1,26 @@
-$phone : '(max-width: 480px)';
 $tablet-portrait: '(max-width: 767px)';
 $tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
 $large-desktop: '(min-width: 1200px)';
-$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
-$retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), (min-resolution: 1.5dppx)';
-
-@mixin respond-to($media) {
-    @media only screen and #{$media} {
+@mixin respond-to($tablet-portrait) {
+    @media only screen and #{$tablet-portrait} {
         @content;
+        .mob-menu{
+            display: none;        
+        }
+        .mob-search{
+            display: none;
+        }
+        .top-nav{
+            background: none;
+            position: absolute;
+            display: block;
+            width: 50%;
+            left: 34em;
+            top: 1em;
+            height: 20%;
+            margin: 0;
+            padding: 0;       
+        }
     }
 }
 @mixin respond-to($large-desktop) {
@@ -22,23 +35,15 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .mob-close{
             display: none;
         }
-        .image-header{
-            background: url(../imgs/desktop/header-desktop.png);
-            background-size: cover;
-            background-repeat: none;
-            max-width: 1520px;
-            max-height: 610px;
-        }
         .container-image{
             padding: 15em;
+        }
+        .top-bar{
+            padding: 2em 13em;
         }
         //-----------------Logo------------------
         .logo{
             margin:0em 1em;
-        }
-        .img-logo{
-            max-width: 90px;
-            max-height: 70px;
         }
         //-----------------Top bar----------------
         .top-bar{
@@ -84,7 +89,7 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
             padding: 0em;
             margin: 0em;
         }
-        .box-search{
+        .box-search{ 
             width: 80%;
         }
         .mob-search-small{
@@ -96,230 +101,5 @@ $retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), 
         .category{
             padding:0em 7em 0em 1em;
         }
-        //-------------------Special Section-----------------
-        .special-section{
-            padding: 5em 20em;
-        }
-        .col-special-description{
-            padding: 7.5em 0;
-        }
-
-        h2{
-            font-size: 50px;
-        }
-        .img-special-event-1{
-            max-width: 358px;
-            max-height: 490px;
-        }
-        h1{
-            font-size: 40px;
-        }
-        h3{
-            padding: 0;
-            font-size: 25px;
-        }
-        .special-description{
-            font-size: 21px;
-            padding-bottom: 1em;
-        }
-        .special-buttom{
-            font-size: 26px;
-        }
-        .special-buttom:hover{
-            font-size: 28px;
-        }
-        //-------------------Explore Section-----------------
-        .explore-cr-section{
-            padding: 5em 20em;
-        }
-        .explore-description{
-            font-size: 22px;
-        }
-        
-        .img-explore{
-            max-width: 243px;
-            max-height: 391px;
-            padding: .5em;
-        }
-        .see-more-dark{
-            font-size: 30px;
-        }
-        .see-more-dark:hover{
-            font-size: 32px;
-        }
-        //-------------------Camping Section-----------------
-         .camping-section{
-            padding: 5em 20em;
-        }
-        .camping-hikes-description{
-            font-size: 22px;
-        }
-        .img-camping{
-            max-width: 367px;
-            max-height: 310px;
-        }
-        .col-camping{
-            padding: 1em 0.5em;
-        }
-        .see-more-light{
-            padding: 1em 3em;
-            font-size: 32px;
-        }
-        .see-more-light:hover{
-            font-size: 30px;
-        }
-        .text-col-camping{
-            font-size: 22px;
-            padding: 1em 3em;
-            font-size: 34px;
-        }
-        //-------------------Hikes Section-----------------
-         .hikes-section{
-            padding: 5em 20em;
-        }
-        .img-chirripo{
-            max-width: 371px;
-            max-height: 162px;
-        }
-        .col-hikes{
-            padding: 0 ;
-        }
-        .img-chirripo-principal{
-            max-width: 376px;
-            max-height: 571px;
-        }
-        //-------------------Night Section-----------------
-        .night-section-dark{
-            padding: 1em 20em 6em;
-        }
-        .night-description{
-            font-size: 18px;
-            padding: .5em;
-        }
-        .night-title{
-            font-size: 30px;
-            padding-top: 3em;
-        }
-        .night-buttom{
-            font-size: 24px;
-            padding: .2em 1em;
-            margin: 0 0 0 2.6em;
-        }
-        .night-buttom:hover{
-            font-size: 26px;
-        }
-        .moon-icon{
-            top: 249.5em;
-            left: 39.5em;
-            max-width: 125px;
-            max-height: 125px;
-        }
-        .meteor-icon{
-            top: 249.5em;
-            left: 24em;
-            max-width: 125px;
-            max-height: 125px;
-        }
-        .stars-icon{
-            top: 249.5em;
-            left: 54.5em;
-            max-width: 125px;
-            max-height: 125px;
-        }
-        .night-section-light{
-            padding:2em 20em 5em;
-        }
-        .night-section-dark{
-           padding: 2em 20em 13em;;
-        }
-        //-------------------Footer Section-----------------
-         .container-image-footer{
-            padding: 12em 14em 1.5em 14em;
-        }
-        .image-footer{
-            background: url(../imgs/desktop/footer-desktop.png);
-            background-size: cover;
-            background-repeat: none;
-        }
-        .contact-footer{
-            font-size: 30px;
-        }
-        .contact-footer:hover{
-            font-size: 32px;
-        }
-        .footer-icon{
-            font-size: 4em;
-            padding: 0 0 0 1em;
-        }
-        //--------------------------------Desktop specific section--------------------------------
-        .header-special-event{
-            max-width: 1520px;
-            max-height: 610px;
-            background: url(../imgs/desktop/header-specific-desktop.png);
-            background-size: cover;
-            background-repeat: none;
-        }
-        //----------------------------------------Info section----------------------
-        .special-section-category{
-          padding: 5em 20em 2em 20em;
-        }
-        .img-special-event-2{
-            max-width: 457px;
-            max-height: 423px;
-            }
-        .category-link{
-            font-size: 27px;
-            }
-        .category-title{
-            font-size: 22px;
-        }
-        .col-special-event{
-            padding: 6em 1em;
-        }
-        .category-description{
-            font-size: 18px;
-        }
-        .register-buttom{
-            max-width: 209px;
-            margin: auto;
-            font-size: 18px;
-        }
-        .register-buttom:hover{
-            font-size: 20px;
-        }
-        //---------------------------------------Related--------------------------------
-        .related-event{
-            padding: 2em 20em;
-            max-width: 1381px;
-            margin: 0;
-        }
-        .related-title{
-            font-size: 30px;
-        }
-        .img-related-event{
-            max-width: 143px;
-            max-height: 188px;
-        }
-        //--------------------------------------Footer-------------------------------
-        .container-footer{
-            padding: 1.5em 6em 0.3em
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-
+    }
 }

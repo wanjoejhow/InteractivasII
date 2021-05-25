@@ -1,8 +1,8 @@
 @import 'media-queries';
-
-
 body{
-    @include respond-to($large-desktop);
+    font-family: "Myriad Pro";
+    @include respond-to($large-desktop); 
+    @include respond-to($tablet-portrait); 
 }
 //----------Colors--------//
 $white: #fff;
@@ -15,15 +15,15 @@ $regular: 400;
 $semibold: 500;
 $bold: 700;
 $black: 800;
-//----------Colors--------//
 //----------Menu--------//
+//-----------------------------------------------Top Bar----------------------------------//
 .mob-menu{
-    color: #fff;
+    color: $white;
     font-size: 1.7em;
     display: inline-block;
 }
 .mob-search{
-    color: #fff;
+    color: $white;
     font-size: 1.7em;
     float: right;
 }
@@ -33,26 +33,18 @@ $black: 800;
     float: right;
     margin: -.8em 1em 0em 0em;
 }
-//----------Menu--------//
-//----------Top-image--------//
-.image-header{
-    background: url(../imgs/header.png);
-    background-size: cover;
-    max-width: 493px;
-    max-height: 276px;
-}
-.container-image{
-    padding: 7em;
-}
 .container-fluid{
     margin: 0;
     padding: 0;
+    font-family: "Myriad Pro";
 }
-//----------Top-image--------//
-//----------Top-navigation--------//
 .top-bar{
     padding: 1.5em 2em;
-    width: 100%;
+    position: relative;
+}
+.logo{
+    max-width: 54px;
+    margin: 0 6.3em;
 }
 .top-nav{
     position: fixed;
@@ -67,40 +59,22 @@ $black: 800;
     float: right;
     margin: 0;
 }
-.top-menu{
-    font-size: 35px;
-    color: #fff;
-    padding: .5em 2em 0em 2em;
-    font-family: "Myriad Pro";
-    display: block;
-    text-align: center;
-}
 .top-nav-item{
-    margin: 2.5em 1em;
+    margin: 2em 1em;
     display: block;
 }
 .top-nav-link{
     text-decoration: none;
-    font-size: 21px;
-    color: #fff;
-    font-weight: $semibold;
+    font-size: 20px;
+    color:$white;
+    font-weight: $light;
 }
 .top-nav-link:hover{
     color: $orange ;
-    font-size: 23px;
 }
 .icon-menu{
     padding: 0em 2em;
 }
-//----------Logo--------//
-.logo{
-    margin:0em 0em 0em 6.5em;
-}
-.img-logo{
-    max-width: 54px;
-    max-height: 42px;
-}
-//----------Search--------//
 .top-nav-search{
     position: fixed;
     top: 0;
@@ -111,12 +85,6 @@ $black: 800;
     background: $dark-green;
     transition: 0.5s;
     z-index: 2;
-    float: right;
-    margin: 0;
-}
-.ul-search{
-    margin: 0;
-    padding: 0;
 }
 .box-search{
     width: 73%;
@@ -129,356 +97,66 @@ $black: 800;
     margin: 1em;
 }
 .mob-search-small{
-    color: #fff;
+    color: $white;
     font-size: 1.5em;
     float: right;
-    margin: 1.2em 1em 0 0;
+    margin: -2em 1em 0 0;
+}
+.ul-search{
+    padding: 0;
+}
+.category{
+    padding: 0em 4em 0 1em;
 }
 .top-nav-search-link{
     text-decoration: none;
     font-size: 14px;
-    color: #0D9CA4;
-    font-family: "Myriad Pro";
+    color: $blue-light;
 }
 .top-nav-search-link:hover{
-    color: #F3B61C;
+    color: $orange;
 }
 .top-nav-search-item {
     margin: 0em 0.1em;
     display: inline-block;
 }
-.category{
-    padding: 0em 4em 0 1em;
-    margin: 0em;
+//----------------------------------------Special Event-----------------------------------//
+.icon-next-main{
+    margin-left: 1em;
 }
-//----------Top-navigation--------//
-
-//----------Special Event--------//
-.special-section{
+.icon-back-main{
+    margin-right: 1em;
+}
+.special-section-main{
     background-color: $dark-green;
     padding: 4em 2em;
-    margin: 0;
     color: $white;
-    font-family: "Myriad Pro";
+    border-radius: 0
 }
-.col-special{
-    margin: 0;
-    padding: 0 1em 0 0 ;
+.img-special-section-main{
+    max-width: 170px;
 }
-.img-special-event-1{
-    max-width: 167px;
-    max-height: 237px;
-}
-.col-special-description{
-    margin: 0;
-    padding: 1.5em 0em;
+.col-special-text-main{
+    padding: 1em 0em;
 }
 h1{
     font-size: 21px;
-    font-family:  "Myriad Pro";
     font-weight: $bold;
 }
 h2{
     font-size: 21px;
-    font-family:  "Myriad Pro";
     font-weight: $bold;
 }
 h3{
     padding: .5em 0 0 0;
     font-size: 18px;
-    font-family:  "Myriad Pro";
     font-weight: $regular;
 }
-.special-description{
-    font-size: 12px;
-    font-family:  "Myriad Pro";
-    font-weight: $light;
-    padding-bottom: 0 ;
-}
-.special-buttom{
-    font-size: 12px;
-    font-weight: $regular;
-    color: $blue-light;
-    border: .1em solid $blue-light;
-    text-align: center;
-    text-decoration: none;
-    border-radius: .5em;
-    padding: 0.5em 2em;
-}
-.special-buttom:hover{
-    color: $orange;
-    border: .1em solid $orange;
-    font-size: 14px;
-}
-//----------Special Event--------//
-//----------Explore Costa Rica--------//
-.explore-cr-section{
-    background-color: $blue-light;
-    padding: 4em 2em;
-    margin: 0;
-    color: $white;
-    font-family: "Myriad Pro";
-}
-.img-explore{
-    max-width: 102px;
-    max-height: 132px;
-}
-.explore-description{
-    font-size: 13px;
-    font-weight: $light;
-}
-.center{
-    text-align: center;
-}
-.see-more-dark{
-    padding: 1em ;
-    text-align: center;
-    text-decoration: none;
-    color: $dark-green;
-    font-size: 15px;
-    font-weight: $bold;
-}
-.see-more-dark:hover{
-    color: $orange;
-    font-size: 17px;
-}
-.div{
-    padding: 0;
-    margin: 0;
-}
-//----------Explore Costa Rica--------//
-//----------Camping--------//
-.camping-section{
-    background-color: $dark-green;
-    padding: 4em 2em;
-    margin: 0;
-    color: $white;
-    font-family: "Myriad Pro";
-}
-.img-camping{
-    max-width: 151px;
-    max-height: 124px;
-}
-.col-camping{
-    padding: 0 .1em ;
-}
-.see-more-light{
-    padding: 1em 2.5em;
-    text-align: center;
-    text-decoration: none;
-    color: $blue-light;
-    font-size: 15px;
-    font-weight: $bold;
-}
-.camping-hikes-description{
-    font-size: 14px;
-    font-weight: $light;
-}
-.see-more-light:hover{
-    color: $orange;
-    font-size: 17px;
-}
-.text-col-camping{
-    font-size: 16px;
-    font-weight: $regular;
-}
-//----------Camping---------//
-//----------Hikes--------//
-.hikes-section{
-    background-color: $dark-green;
-    padding: 4em 2em;
-    margin: 0;
-    color: $white;
-    font-family: "Myriad Pro";
-}
-.img-chirripo{
-    max-width: 157px;
-    max-height: 63px;
-}
-.img-chirripo-principal{
-    max-width: 155px;
-    max-height: 243px;
-}
-col{
-    padding: 0;
-    margin: 0;
-}
-//----------Hikes--------//
-//----------Night--------//
-.night-section{
-    margin: 0;
-    color: $white;
-    font-family: "Myriad Pro";
-}
-.night-section-light{
-    padding: 2em 2em 3em;
-    background-color: $blue-light;
-}
-.night-section-dark{
-    padding: 3em 2em;
-    background-color: $dark-green;
-}
-.moon-icon{
-    position: absolute;
-    top: 133.5em;
-    left: 9.5em;
-    max-width: 66px;
-    max-height: 66px;
-}
-.meteor-icon{
-    position: absolute;
-    top: 133.5em;
-    left: 3em;
-    max-width: 66px;
-    max-height: 66px;
-}
-.stars-icon{
-    position: absolute;
-    top: 133.5em;
-    left: 16.3em;
-    max-width: 66px;
-    max-height: 66px;
-}
-.night-description{
-    font-size: 11px;
-    font-weight: $light;
-    padding: .5em;
-}
-.night-title{
-    font-size: 25px;
-    font-weight: $regular;
-    padding-top: 1em;
-}
-.night-buttom{
-    font-size: 12px; 
-    font-weight: $regular;
-    color: #0D9CA4;
-    border: 0.1em solid #0D9CA4;
-    margin: 0 1.5em;
-    text-decoration: none;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
-}
-.night-buttom:hover{
-    color: $orange;
-    border: .1em solid $orange;
-}
-//----------Night--------//
-//----------Footer--------//
-.image-footer{
-    background: url(../imgs/footer.png);
-    background-size: cover;
-}
-.container-image-footer{
-    padding: 6em 2em 2em 2em;
-}
-.contact-footer{
-    text-decoration: none;
-    color: $white;
-    font-family: "Myriad Pro";
-    font-size: 18px;
-    font-weight: $regular;
-}
-.contact-footer:hover{
-    font-size: 20px;
-    color: $orange;
-}
-.footer-icon{
-    color: #fff;
-    font-size: 2em;
-    float: right;
-    padding: 0 0 0 1em;
-}
-.footer-icon:hover{
-    color: orange;
-}
-.footer-icon-small{
-    color: #fff;
-    font-size: 2em;
-    float: right;
-    padding: 0 0 0 1em;
-}
-.footer-icon-small:hover{
-    color: orange;
-}
-//----------------------------------------------------Special Event-----------------------------------------------
-.header-special-event{
-    background: url(../imgs/header-specific-event.png);
-    background-size: cover;
-    max-width: 493px;
-    max-height: 276px;
-}
-//--------------info-----------------
-.col-special-specific-event{
-    margin: 0;
-    padding: 1.5em 0em;
-}
-.img-special-event-2{
-    max-width: 157px;
-    max-height: 217px;
-    padding: 0;
-    margin: 0;
-}
-.img-special-event-2{
-    max-width: 183px;
-    max-height: 176px;
-    padding: 0;
-    margin: 0;
-}
-
-.info-event{
-    padding: 0;
-    margin: 1em 0;
-}
-.category-description{
+.special-description-main{
     font-size: 12px;
     font-weight: $light;
-    padding: 1em 1em;
 }
-.category-link{
-    text-decoration: none;
-    color: $white;
-    font-weight: $regular;
-    font-size: 15px;
-}
-.category-link:hover{
-    color:$orange;
-}
-.col-special-event{
-    margin: 0;
-    padding: .6em 1em 0 0 ;
-}
-.category-title{
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-    font-weight: $regular;
-}
-.special-section-category{
-    background: $dark-green;
-    padding: 4em 2em;
-    margin: 0;
-    color: $white;
-    font-family: "Myriad Pro";
-}
-//--------------info-----------------
-//----------------------------Related Event----------------------
-.related-event{
-    padding: 1em 2em 2em;
-    background: $blue-light;
-    max-width: 387px;
-}
-.related-title{
-    color: $white;
-    font-size: 20px;
-    font-family: "Myriad Pro";
-    font-weight: $regular;
-}
-.img-related-event{
-    max-width: 56px;
-    max-height: 67px; 
-}
-.register-buttom{
+.special-buttom-main{
     font-size: 12px;
     font-weight: $regular;
     color: $white;
@@ -487,16 +165,383 @@ col{
     text-decoration: none;
     border-radius: .5em;
     padding: 0.5em 2em;
-    max-width: 120px;
-    margin: auto;
 }
-.register-buttom:hover{
+.special-buttom-main:hover{
+    color: $orange;
+    border: .1em solid $orange;;
+}
+//-----------------------------------------Explore Costa Rica----------------------------//
+.explore-section-main{
+    background-color: $blue-light;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    text-align: center;
+}
+.card-explore-section-main{
+    background-color: $blue-light;
+    border: none;
+    padding: 0;
+}
+.img-explore{
+    max-width: 112px;
+}
+.title-explore{
+    padding: .5em;
+}
+.section-description{
+    font-size: 13px;
+    font-weight: $light;
+}
+.explore-hikes-buttom-main{
+    font-size: 12px;
+    font-weight: $regular;
+    color: $white;
+    border: .1em solid $white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5em;
+    padding: 0.5em 11em;
+}
+.explore-hikes-buttom-main:hover{
+    color: $orange;
+    border: .1em solid $orange;;
+}
+.container-img-explore{
+    margin: 0 0 1em 0;
+}
+//---------------------------------------------Camping---------------------------------------//
+.container-img-camping{
+    border: 0;
+    border-radius: 0;
+    color: $white;
+    background-color: transparent;
+    padding: 0em .001em 1em 0;
+}
+.camping-section-main{
+    background-color: $dark-green;
+    padding: 4em 2em;
+    margin: 0;
+    color: $white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+.img-camping{
+    max-width: 160px;
+}
+.camping-buttom-main{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    border: 0.1em solid #fff;
+    text-decoration: none;
+    border-radius: 0.5em;
+    padding: .5em 0;
+    margin: 1em;
+}
+.camping-buttom-main:hover{
     color: $orange;
     border: .1em solid $orange;
+}
+//---------------------------------------------Hikes--------------------------------------//
+.container-img-hikes{
+    margin: 0;
+}
+.col-img-hikes-main{
+    padding: 0 0 1em;
+}
+.hikes-section-main{
+    text-align: center;
     font-size: 14px;
+    font-weight: 100;
+    background-color: $dark-green;
+    border-radius: 0;
+    color: $white;
+    padding: 0 2em 4em 2em;
+    border: 0;
 }
-//----------------------------footer--------------------------------
-.container-footer{
-    padding: 1em;
+.img-chirripo{
+    max-width: 160px;
+}
+.img-chirripo-principal{
+    max-width: 159px;
+}
+//----------------------------------Night--------------------------------//
+.card-night-section-main{
+    background-color: $dark-green;
+    border: none;
+    padding: 0;
+}
+.meteor-icon{
+    position: absolute;
+    top: 118em;
+    left: 2em;
+    max-width: 66px;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../imgs/icon/down.png);
+}
+.accordion-button::after{
+    background-image: url(../imgs/icon/up.png);
+}
+.moon-icon{
+    position: absolute;
+    top: 118em;
+    left: 9.5em;
+    max-width: 66px;
+}
+.stars-icon{
+    position: absolute;
+    top: 118em;
+    left: 17em;
+    max-width: 66px;
+}
+.night-section-light{
+    padding: 2em;
+    color: $white;
+    background-color: $blue-light;
+    text-align: center;
+}
+.night-section-dark{
+    padding: 3em 2em;
+    background-color: $dark-green;
+    color: $white;
+    text-align: center;
+}
+.card-night-section-main{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.acordion-buttom-night{
+    color: #fff;
+    background-color: $dark-green;
+    box-shadow:none;
+}
+.acordion-buttom-night:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+.acordion-buttom-night:not(.collapsed){
+    color:$orange;
+    background-color: #364E51;
+    box-shadow: none;
+}
+.container-buttom-main{
     background: $dark-green;
+    margin: auto;
+    padding: 0em 2em 4em ;
 }
+.night-description-main{
+    font-size: 12px;
+    font-weight: $light;
+}
+//---------------------------------Related Event---------------------------------//
+//Div cards specific events
+.container-specific-events{
+    background:$dark-green;
+    padding: 2em;
+    color: $white;
+}
+.img-specific-event{
+    max-width: 183px;
+}
+.title-specific-event{
+    font-size: 12px;
+    margin: 0;
+    font-weight: $regular;
+}
+.category-link-specific-event{
+    text-decoration: none;
+    color: $white;
+    font-weight: $regular;
+    font-size: 15px;
+}
+.category-link-specific-event:hover{
+    color:$orange;
+}
+.description-specific-event{
+    font-size: 12px;
+    font-weight: $light;
+}
+.btn-register-specific-event{
+    font-size: 12px;
+    font-weight: 400;
+    border: 0.1em solid $white;
+    border-radius: 0.5em;
+    max-width: 120px;
+    margin: auto;
+    color: $white;
+    background: none;
+}
+.btn-register-specific-event:hover{
+    color: $orange;
+    border: .1em solid $orange;
+    background: none;
+}
+.btn-register-specific-event:focus{
+    box-shadow: none;
+}
+.btn-register-model{
+    font-size: 16px;
+    font-weight: 580;
+    border: 0.1em solid $white;
+    border-radius: 0.5em;
+    background: none;
+}
+.btn-register-model:hover{
+    background: none;
+    color: $orange;
+    border: 0.1em solid $orange;
+}
+//Div cards related events
+.icon-back-specific{
+    margin-top: 2.5em;
+    margin-right: 2em;
+}
+.icon-next-specific{
+    margin-top: 2.5em;
+    margin-left: 2em;
+}
+.container-related-event{
+    padding: 1em 2em 0;
+    background: $blue-light;
+    max-width: 387px;
+}
+.title-related-event{
+    color: $white;
+    font-size: 20px;
+    background-color: $blue-light;
+    font-weight: $regular;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+}
+.img-related-event{
+    max-width: 76px;
+    margin: auto;
+}
+.card-related-event{
+    background:$blue-light;
+    border: none;
+    margin: .3em;
+    padding: 0;
+}
+.text-card-related-event{
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: $light;
+    padding: .5em;
+    margin: 0;
+}
+.card-related-link{
+    text-decoration: none;
+}
+//Register
+.container-register{
+    background: $blue-light;
+    color: $white;
+}
+.header-modal{
+    padding: 1em;
+}
+.mob-close-modal{
+    background: transparent;
+    box-sizing: content-box;
+    border: 0;
+    color: $white;
+    font-size: 1.7em;
+    float: right;
+    padding: .5em;
+}
+.white-logo{
+    margin-left: 8.7em;
+}
+.title-register{
+    font-size: 24px;
+    font-weight: $regular;
+    margin: 0 0 1em 0.6em;
+}
+.description-register{
+    font-size: 16px;
+    font-weight: $light;
+    margin: 1em 0 0 1em;
+    padding: 0;
+}
+.box-spaces{
+    width: 40%;
+    height: 25%;
+    border-radius: .7em;
+    color: $white;
+    background-color: transparent;
+    border: 0.1em solid $white;
+    color: $white;
+    margin-left: 5.9em;
+}
+.box-register-kids{
+    width: 99px;
+    height: 2.5em;
+    border-radius: .7em;
+    color: $white;
+    background-color: transparent;
+    border: 0.1em solid $white;
+    color: $white;
+    margin: 0 2em 0;
+}
+.box-register-adults{
+    width: 99px;
+    height: 2.5em;
+    border-radius: .7em;
+    color: $white;
+    background-color: transparent;
+    border: 0.1em solid $white;
+    color: $white;
+    margin: 0 0 0 1em;
+}
+.box-register-count{
+    width: 95%;
+    height: 2.5em;
+    border-radius: .7em;
+    color: $white;
+    background-color: transparent;
+    border: 0.1em solid $white;
+    color: $white;
+}
+.col-reset{
+    padding: 0;
+    margin: 0;
+}
+.spaces{
+    font-size: 16px;
+    font-weight: $light;
+    margin: auto;
+    margin-left: 6.6em;
+}
+//----------------------------footer--------------------------//
+.container-footer{
+    padding: .5em;
+    background: $blue-light;
+    text-align: center;
+}
+.copyright{
+    font-size: 12px;
+    color: $white;
+    text-decoration: none;
+}
+.copyright:hover{
+    color: $white;
+}
+.container-footer-specific-section{
+    padding: .5em;
+    background: $dark-green;
+    text-align: center;
+}
+
+
+
+
+
+
+

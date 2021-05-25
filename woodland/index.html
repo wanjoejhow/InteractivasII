@@ -6,191 +6,316 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Woodland</title>
 </head>
 
 <body>
- <!---------Header--------->
- <div class="container-fluid image-header">
-    
-        <nav class="top-bar">
-            <span class="mob-menu fas fa-bars" onclick="openMobileMenu()"></span>
-            <a class="logo" href="./index.html"><img class="img-logo" src="./imgs/icon/logo.png" alt="Logo"></a>
-            <ul class="top-nav">
-                <Span class="mob-close fas fa-times" onclick="closeMobileMenu()"></Span>
-                <li class="top-menu">MENU</li>
-                <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/home.png" alt="house"><a class="top-nav-link" href="./index.html">Home</a></li>
-                <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/special-event.png" alt="calender"><a class="top-nav-link" href="./specific-event.html">Special Event</a></li>
-                <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/search.png" alt="seach"><a class="top-nav-link" href="#">Explore</a></li>
-                <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/camping.png" alt="fog"><a class="top-nav-link" href="#">Camping</a></li>
-                <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/hikes.png" alt="person"><a class="top-nav-link" href="#">Hikes</a></li>
-                <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/event-night.png" alt="moon"><a class="top-nav-link" href="#">Event Night</a></li>
-            </ul>
-            <span class="mob-search fas fa-search" onclick="openMobileSearch()"></span>
-            <div>
-                <div class="top-nav-search">
-                    <Span class="mob-close fas fa-times" onclick="closeMobileSearch()"></Span>
-                    <li class="top-menu">SEARCH</li>
-                    <input class="box-search" type="text" placeholder="">
-                    <span class="mob-search-small fas fa-search"> </span>
-                    <div class="category">
-                        <ul class="ul-search">
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Special_Event</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Camping</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Hikes</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Event_Night</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Nature</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Fauna</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Beach</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#River</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Stars</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Night</a></li>
-                            <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Moon</a></li>
-                        </ul>
-                    </div>     
+    <!---------Header--------->
+    <div class="container-fluid">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imgs/header-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/header-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/header-3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/header-4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/header-5.png" class="d-block w-100" alt="...">
+                </div>
+                <nav class="top-bar">
+                    <span class="mob-menu fas fa-bars" onclick="openMobileMenu()"></span>
+                    <a href="./index.html"><img class="logo" src="./imgs/icon/logo-white.png" alt="Logo"></a>
+                    <ul class="top-nav">
+                        <Span class="mob-close fas fa-times" onclick="closeMobileMenu()"></Span>
+                        <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/home-icon.png" alt="house"><a
+                                class="top-nav-link" href="./index.html">Home</a></li>
+                        <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/special-icon.png"
+                                alt="calender"><a class="top-nav-link" href="./specific-event.html">Special Event</a>
+                        </li>
+                        <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/explore-icon.png" alt="seach"><a
+                                class="top-nav-link" href="#">Explore</a></li>
+                        <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/camping-icon.png" alt="fog"><a
+                                class="top-nav-link" href="#">Camping</a></li>
+                        <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/hikes-icon.png" alt="person"><a
+                                class="top-nav-link" href="#">Hikes</a></li>
+                        <li class="top-nav-item"><img class="icon-menu" src="./imgs/icon/night-icon.png" alt="moon"><a
+                                class="top-nav-link" href="#">Event Night</a></li>
+                    </ul>
+                    <span class="mob-search fas fa-search" onclick="openMobileSearch()"></span>
+                    <div>
+                        <div class="top-nav-search">
+                            <Span class="mob-close fas fa-times" onclick="closeMobileSearch()"></Span>
+                            <input class="box-search" type="text" placeholder="">
+                            <span class="mob-search-small fas fa-search"> </span>
+                            <div class="category">
+                                <ul class="ul-search">
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link"
+                                            href="#">#Special_Event</a></li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Camping</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Hikes</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link"
+                                            href="#">#Event_Night</a></li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Nature</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Fauna</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Beach</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#River</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Stars</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Night</a>
+                                    </li>
+                                    <li class="top-nav-search-item"><a class="top-nav-search-link" href="#">#Moon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!------Special Event----->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="false">
+        <div class="carousel-inner">
+            <!------Special Event 1----->
+            <div class="carousel-item icon-left active">
+                <div class="card special-section-main">
+                    <div class="row ">
+                        <div class="col">
+                            <img class="img-special-section-main" src="./imgs/special-1.png" alt="sunset">
+                        </div>
+                        <div class="col col-special-text-main">
+                            <div class="card-body-special-event">
+                                <h1>Special Event</h1>
+                                <h3>Rain´s Stars</h3>
+                                <p class="card-text special-description-main">Shinny sky <br></p>
+                                <p class="cart-tex special-description-main">The best rain´s stars and <br> magical sky
+                                    in La Tigra.</p>
+                            </div>
+                            <a class="special-buttom-main" href="./specific-event.html">GO NOW</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-           
-        </nav>
-        <header class="container-image"></header>
+            <!------Special Event 2----->
+            <div class="carousel-item">
+                <div class="card special-section-main">
+                    <div class="row ">
+                        <div class="col">
+                            <img class="img-special-section-main" src="./imgs/special-2.png" alt="sunset">
+                        </div>
+                        <div class="col col-special-text-main">
+                            <div class="card-body-special-event">
+                                <h1>Special Event</h1>
+                                <h3>Full moon</h3>
+                                <p class="card-text special-description-main">Biggest moon<br></p>
+                                <p class="cart-tex special-description-main">The biggest moon in <br> 2021 enjoy it.</p>
+                            </div>
+                            <a class="special-buttom-main" href="#">GO NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------Special Event 3----->
+            <div class="carousel-item">
+                <div class="card special-section-main">
+                    <div class="row ">
+                        <div class="col">
+                            <img class="img-special-section-main" src="./imgs/special-3.png" alt="sunset">
+                        </div>
+                        <div class="col col-special-text-main">
+                            <div class="card-body-special-event">
+                                <h1>Special Event</h1>
+                                <h3>Sweet sunset</h3>
+                                <p class="card-text special-description-main">Sweet Sunset <br></p>
+                                <p class="cart-tex special-description-main">The best sunset located <br> in
+                                    Limon-Puerto Viejo.</p>
+                            </div>
+                            <a class="special-buttom-main" href="#">GO NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon icon-back-main" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon icon-next-main" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
- <!---------Header--------->
- <!------Special Event----->
-    <section class="row special-section">
-        <div class="col col-special ">
-            <img class="img-special-event-1" src="./imgs/special-event.png" alt="sunset">
-        </div>
-        <div class="col col-special col-special-description">
-            <h1>
-                Special Event
-            </h1>
-            <h3>
-                Sweet sunset
-            </h3>
-            <p class="special-description">
-                The best sunset and magical sunset located in Limon-Puerto Viejo. 
-            </p>
-            <a class="special-buttom" href="#">Go Now</a> 
-        </div>
-    </section>
- <!---------Special Event-------->
- <!------Explore Cosra Rica------> 
-    <section  class="row explore-cr-section">
-         <h2  class="center">
+    <!------Explore Costa Rica----->
+    <div class="explore-section-main">
+        <h2>
             Explore Costa Rica
         </h2>
-        <p class="center explore-description">
+        <p class="section-description">
             Island's Bahia Ballena, Beach´s Manzanillo, River´s
-            Celeste are just ones of the magnific places of Costa Rica
+            Celeste are just ones of the magnific places of <br> Costa Rica
         </p>
-        <div class="div" >
-            <img class="col img-explore" src="./imgs/river.png" alt="River">
-            <img class="col img-explore" src="./imgs/beach.png" alt="Beach">
-            <img class="col img-explore" src="./imgs/whale.png" alt="Whale">
+        <div class="row container-img-explore">
+            <!------Card 1----->
+            <div class="card card-explore-section-main col">
+                <img class="img-explore" src="./imgs/explore-1.png" class="card-img-top" alt="...">
+            </div>
+            <!------Card 2----->
+            <div class="card card-explore-section-main col">
+                <img class="img-explore" src="./imgs/explore-2.png" class="card-img-top" alt="...">
+            </div>
+            <!------Card 3----->
+            <div class="card card-explore-section-main col">
+                <img class="img-explore" src="./imgs/explore-3.png" class="card-img-top" alt="...">
+            </div>
         </div>
-        <a class="see-more-dark" href="#">SEE MORE</a>
-    </section>
-<!------Explore Cosra Rica------> 
-<!-----------Camping------------>
-    <section class="row camping-section">
-        <h2  class=" center">
-            Camping
-        </h2>
-        <p class="center camping-hikes-description">
+        <a class="explore-hikes-buttom-main" href="#">EXPLORE</a>
+    </div>
+    <!-----------Camping------------>
+    <div class="row camping-section-main">
+        <h2>Camping</h2>
+        <p class="section-description">
             Monteverde and Manzanillo are the most popular camping zone in Costa Rica
         </p>
-        <div class="div" >
-            <img class="col col-camping img-camping" src="./imgs/manzanillo.png" alt="River">
-            <img class="col col-camping img-camping" src="./imgs/monteverde.png" alt="Forest">
+        <!--Card 1-->
+        <div class="card col container-img-camping">
+            <img class="img-camping" src="./imgs/manzanillo.png" class="card-img" alt="manzanillo´s beach">
+            <div class="card-img-overlay">
+                <h3>Manzanillo</h3>
+                <p class="section-description">Last updated 3 mins ago</p>
+            </div>
+            <a class="camping-buttom-main" href="#">EXPLORE</a>
         </div>
-        <h3 class="center">
-            Fresh
-        </h3>
-        <p class="col text-col-camping center">
-             Manzanillo Camping
-        </p>
-        <p  class="col text-col-camping center">
-             Monteverde Camping
-        </p>
-        <a class="col see-more-light" href="#">SEE MORE</a>
-        <a class="col see-more-light" href="#">SEE MORE</a> 
-              
-    </section>
-<!-----------Camping------------>
-<!--------------Hikes----------->
-    <section class="row hikes-section">
-        <h2  class=" center">
-            Hikes
-        </h2>
-        <p class="center camping-hikes-description">
-            Monteverde or Manzanillo are the most popular camping zone in Costa Rica
-        </p>
-        <div class="col div">
-            <img class="img-chirripo" src="./imgs/chirripo-1_1.png" alt="Chirripo">
-            <img class="img-chirripo" src="./imgs/chirripo-2.png" alt="Chirripo">
-            <img class="img-chirripo" src="./imgs/chirripo-3_1.png" alt="Chirripo">
-            <img class="img-chirripo" src="./imgs/chirripo-4_1.png" alt="Chirripo">
-        </div>
-        <div class=" col div">
-            <img class="img-chirripo-principal" src="./imgs/chirripo-principal.png" alt="Chirripo">
-        </div>
-        <a class="col see-more-light" href="#">SEE MORE</a>
-    </section>
-<!--------------Hikes----------->
-<!--------------Event Night----------->
-<section class="night-section">
-    <div>
-        <div class="night-section-light">
-            <h2  class="center title-event-night">
-                Event Night
-            </h2>
-            <img class=" meteor-icon" src="./imgs/icon/meteorite.png" alt="">
-            <img class=" moon-icon" src="./imgs/icon/moon.png" alt="">
-            <img class=" stars-icon" src="./imgs/icon/stars.png" alt="">
-        </div>
-    
-        <div class="row div night-section-dark">
-           
-           <div class="col div">
-            <h3  class=" center night-title">Meteor</h3>
-            <p class="center night-description">The biggest Meteor´s rain</p>
-            <a class="night-buttom" href="#">Go Now</a> 
-           </div>    
-         
-           <div  class="col div">
-            <h3  class=" center night-title">Moon</h3>
-            <p class="center  night-description">Incredible lunar eclipce </p>
-            <a class="night-buttom" href="#">Go Now</a> 
-           </div>
-    
-           <div class="col div">
-            <h3  class=" center night-title">Stars</h3>
-            <p class="center  night-description">Biggest and shinny Star´s rain</p>
-            <a class="night-buttom" href="#">Go Now</a> 
-           </div>         
+        <!--Card 1-->
+        <div class="card col container-img-camping">
+            <img class="img-camping" src="./imgs/monteverde.png" class="card-img" alt="monteverde forest">
+            <div class="card-img-overlay">
+                <h3>Monteverde</h3>
+                <p class="section-description">Last updated 3 mins ago</p>
+            </div>
+            <a class="camping-buttom-main" href="#">EXPLORE</a>
         </div>
     </div>
-</section>
-<!--------------Event Night----------->
-<!--------------footer----------->
-<div class="row container-fluid image-footer">
-      <footer class="container-image-footer">
-        <a class="col contact-footer" href="#">Contact</a>
-        <a class="footer-icon" href="">
-            <span class="fab fa-facebook-square"></span>
+    <!--------------Hikes----------->
+    <div class="card hikes-section-main">
+        <h2>
+            Hikes
+        </h2>
+        <p class="section-description">
+            Monteverde or Manzanillo are the most popular camping zone in Costa Rica
+        </p>
+        <div class="row container-img-hikes">
+            <div class="col col-img-hikes-main">
+                <img class="img-chirripo" src="./imgs/chirripo-1.png" alt="Chirripo">
+                <img class="img-chirripo" src="./imgs/chirripo-2.png" alt="Chirripo">
+                <img class="img-chirripo" src="./imgs/chirripo-3.png" alt="Chirripo">
+                <img class="img-chirripo" src="./imgs/chirripo-4.png" alt="Chirripo">
+            </div>
+            <div class="col col-img-hikes-main">
+                <img class="img-chirripo-principal" src="./imgs/chirripo-5.png" alt="Chirripo">
+            </div>
+        </div>
+        <a class="explore-hikes-buttom-main" href="#">EXPLORE</a>
+    </div>
+    <!---------Night--------->
+    <section>
+        <div class="night-section-light">
+            <h2>
+                Event Night
+            </h2>
+            <div>
+                <img class=" meteor-icon" src="./imgs/icon/meteorite.png" alt="">
+                <img class=" moon-icon" src="./imgs/icon/moon.png" alt="">
+                <img class=" stars-icon" src="./imgs/icon/stars.png" alt="">
+            </div>
+        </div>
+        <div class="night-section-dark">
+            <div class="accordion row" id="accordionFlushExample">
+                <!------Card 1----->
+                <div class="card card-night-section-main col">
+                    <div>
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button acordion-buttom-night collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Meteor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body night-description-main">
+                                <p>Magnific <br> meteor´s rain </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------Card 2----->
+                <div class="card card-night-section-main col">
+                    <div>
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button acordion-buttom-night collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Moon
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body night-description-main">
+                                <p>The biggest <br> lunar eclipce </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------Card 3----->
+                <div class="card card-night-section-main col">
+                    <div>
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button far fa-chevron-up acordion-buttom-night collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Stars
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse  collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body night-description-main">
+                                <p>Incredible <br> Rain´s stars</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-buttom-main">
+            <a class="explore-hikes-buttom-main" href="#">EXPLORE</a>
+        </div>
+       
+    </section>
+    <!--------------footer---------->
+    <footer class="container-fluid container-footer">
+        <a class="copyright" href="#">Copyright ©2021 Woodland.com
         </a>
-        <a class="footer-icon" href="">
-            <span class="fab fa-instagram"></span>
-        </a>
-
-      </footer>
-</div>
-<!--------------footer----------->
-        <script src="./js/main.js"></script>
+    </footer>
+    <!--------------js----------->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
