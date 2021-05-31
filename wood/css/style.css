@@ -1,15 +1,14 @@
 body {
   color: #fff;
-  font-family: "Myriad Pro";
-}
-
-.img-header {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-}
-
-.logo {
-  width: 60%;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mobile-section {
@@ -25,14 +24,39 @@ body {
   padding: 0;
 }
 
+.container-img-header {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-header-filter {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.logo {
+  width: 60%;
+}
+
 .nav-container {
   padding: 2em 10em;
 }
 
 .nav-link-menu {
+  font-size: 22px;
+  color: #fff !important;
+  font-weight: 300;
+}
+
+.nav-link-drop {
   font-size: 20px;
   color: #fff !important;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+.nav-link-drop:hover {
+  background: #F3B61C;
 }
 
 .nav-link-menu:hover {
@@ -50,11 +74,6 @@ body {
   padding: 0.5em 1em;
 }
 
-.search:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .btn-search:hover {
   color: #F3B61C;
   background: none;
@@ -63,6 +82,10 @@ body {
 
 .bg-light {
   background: none;
+}
+
+.container-menu-drop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container-footer {
@@ -86,13 +109,7 @@ body {
   text-align: center;
 }
 
-.slides-container {
-  width: 100%;
-  margin: auto;
-}
-
 .img-border {
-  width: 100%;
   border-radius: 0.5em;
 }
 
@@ -122,7 +139,7 @@ h3 {
 
 .card-description {
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
   margin: 1em;
 }
 
@@ -151,10 +168,6 @@ h3 {
 .card-explore {
   background: transparent;
   border: none;
-}
-
-.img-explore {
-  border-radius: 0.5em;
 }
 
 .card-body-explore {
@@ -236,6 +249,11 @@ h3 {
   border: 0.1em solid #F3B61C;
 }
 
+.night-section {
+  padding: 4em 13em;
+  background: #0D9CA4;
+}
+
 .night-light-section {
   padding: 4em 2em;
   background: #0D9CA4;
@@ -244,11 +262,6 @@ h3 {
   border: 0.5em #364E51 solid;
   margin: 0;
   border-radius: 0.5em;
-}
-
-.night-section {
-  padding: 4em 13em;
-  background: #0D9CA4;
 }
 
 .night-dark-section {
@@ -272,13 +285,14 @@ h3 {
   grid-column: span 3;
 }
 
-.tall {
-  -ms-grid-row-span: 2;
-  grid-row: span 2;
-}
-
 .box-header-section {
   padding: 1em 13em;
+}
+
+.card-category {
+  background: #364E51;
+  border: none;
+  margin-bottom: 1em;
 }
 
 .box-container {
@@ -305,10 +319,17 @@ h3 {
   font-weight: 300;
 }
 
-.description-category {
-  font-size: 22px;
+.subtitle-category {
+  font-size: 25px;
   font-weight: 400;
-  margin: 1em;
+  margin: 0.5em;
+  text-align: left;
+}
+
+.description-category {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0.5em;
   text-align: left;
 }
 
@@ -376,7 +397,7 @@ h3 {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   padding: 0.5em 0.5em 0.5em 0;
 }
 
@@ -432,6 +453,15 @@ h3 {
   border-radius: 0.5em;
 }
 
+.event-related-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.event-related-link:hover {
+  color: #fff;
+}
+
 .container-footer-related {
   padding: 1.5em;
   background: #0D9CA4;
@@ -442,6 +472,65 @@ h3 {
   border-radius: 0.5em;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
+}
+
+.container-register {
+  background: #0D9CA4;
+  color: #fff;
+  width: 600px;
+}
+
+.header-modal {
+  padding: 1em;
+  background: #364E51;
+}
+
+.footer-modal-event {
+  background: #364E51;
+  padding: 1em;
+}
+
+.white-logo {
+  width: 15%;
+}
+
+.mob-close-modal {
+  background: transparent;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 0;
+  color: #fff;
+  font-size: 1.7em;
+  float: right;
+  padding: 0.5em;
+}
+
+.btn-register-model {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0.5em 3em;
+  border-radius: 0.5em;
+  background: #0D9CA4;
+  float: right;
+  border: none;
+  margin: 1em;
+}
+
+.btn-register-model:hover {
+  background: none;
+  border: 0.1em solid #F3B61C;
+  color: #F3B61C;
+}
+
+.input-total-specific {
+  background: #364E51;
+  color: #fff;
+  font-size: 20px;
+  border: 0.1em solid #fff;
+}
+
+.container-input-specific {
+  margin: 1em 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -457,17 +546,30 @@ h3 {
     display: none;
   }
 
+  .container-img-header {
+    height: 300px;
+  }
+
   .logo {
-    width: 50%;
+    width: 30%;
   }
 
   .nav-container {
-    padding: 1em 2em;
+    padding: 0.5em 2em;
+    background: #364E51;
   }
 
   .menu-mobile {
-    color: #fff;
+    color: #fff !important;
     font-size: 25px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 0;
+  }
+
+  .menu-mobile:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   .special-section {
@@ -533,7 +635,7 @@ h3 {
   }
 
   .btn-night {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     color: #fff;
     border: 0.1em solid #fff;
@@ -586,6 +688,16 @@ h3 {
     text-align: left;
   }
 
+  .subtitle-category {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .description-category {
+    margin: 0;
+    font-size: 20px;
+  }
+
   .specific-event-section {
     padding: 2em;
   }
@@ -627,13 +739,11 @@ h3 {
   .related-section {
     padding: 2em;
   }
+
+  .input-total-specific {
+    font-size: 15px;
+  }
 }
-/*@media screen and (max-width: 767px) {
-    .nav-container{
-        padding: 1em 5em;
-    }
-Arreglarlo meterle las reglas
-}*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .tablet-special-header {
     display: none;
@@ -649,7 +759,7 @@ Arreglarlo meterle las reglas
   }
 
   .nav-container {
-    padding: 3em;
+    padding: 1em 3em 0em;
   }
 
   h3 {
@@ -724,6 +834,16 @@ Arreglarlo meterle las reglas
     padding: 0em 0 2em;
   }
 
+  .subtitle-category {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .description-category {
+    margin: 0 0 0.5em 0;
+    font-size: 20px;
+  }
+
   .specific-event-section {
     padding: 3em;
   }
@@ -756,5 +876,9 @@ Arreglarlo meterle las reglas
 
   .related-section {
     padding: 3em;
+  }
+
+  .input-total-specific {
+    font-size: 15px;
   }
 }
